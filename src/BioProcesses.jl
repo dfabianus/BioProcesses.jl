@@ -12,7 +12,7 @@ mutable struct BioProcess
     end
 end
 
-# Outer constructor
+# Outer constructors
 function BioProcess()
 end
 
@@ -24,13 +24,11 @@ function calculator_function(var1,var2,var3)
 end
 
 function calc!(bioprocess::BioProcess, calcfun::Function;
-    interp=:highest, )
+    interp=:highest)
+    return nothing
 end
 
-calc!(bp, calculator_function)
-
-
-c.data
+#calc!(bp, calculator_function)
 
 
 end
